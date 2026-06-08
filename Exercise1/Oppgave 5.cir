@@ -1,0 +1,23 @@
+[aimspice]
+[description]
+65
+*Oppgave 5
+
+.include DBSBdiode.mod
+
+V1 1 0 DC 5v
+D1 0 1 DSUB
+[dc]
+1
+V1
+0
+4.8
+0.1
+[ana]
+1 1
+0
+1 1
+1 1 -1E-11 0
+1
+i(v1)
+[end]
