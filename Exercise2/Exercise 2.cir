@@ -1,0 +1,26 @@
+[aimspice]
+[description]
+228
+*Exercise 2
+
+.include p18_model_card.inc
+.include p18_cmos_models_tt.inc
+
+V1 1 0 DC 1.8V
+V2 2 0 DC 0.9V
+
+MN1 1 2 0 0 NMOS L=0.5U W=5U
+MP1 1 2 0 0 PMOS L=0.5U W=5U
+
+.plot dc id(MN1)
+.plot dc gm(MN1)
+.plot dc rds(MN1)
+[dc]
+1
+V2
+0
+1.8
+0.01
+[ana]
+1 0
+[end]
